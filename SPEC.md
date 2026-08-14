@@ -473,6 +473,22 @@ file for zsync. To mitigate this:
 - applications in automated uses cases SHOULD NOT use MD4 for zsync block
   checksums.
 
+## Extra: Interoperability example
+
+This is not formally part of this specification.
+
+Sample zsync files generated with different versions of zsync are provided to
+allow clients to test interoperability with files generated with older versions
+of zsync:
+
+- https://zsync.moria.org.uk/compatibility-testing/FreeBSD-15.0-RELEASE-powerpc-powerpc64-disc1.iso.zsync-0.6.5.zsync
+- https://zsync.moria.org.uk/compatibility-testing/FreeBSD-15.0-RELEASE-powerpc-powerpc64-disc1.iso.zsync-0.6.6.zsync
+- https://zsync.moria.org.uk/compatibility-testing/FreeBSD-15.0-RELEASE-powerpc-powerpc64-disc1.iso.zsync-0.7.2.zsync
+
+And the following is provided as an example file complying with this specification:
+
+- https://zsync.moria.org.uk/compatibility-testing/FreeBSD-15.0-RELEASE-powerpc-powerpc64-disc1.iso.zsync-0.8-draft.zsync
+
 ## Author & Acknowledgements
 
 Author: Colin Phipps <cph@moria.org.uk>
