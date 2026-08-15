@@ -1,3 +1,20 @@
+Changes in v0.8.0
+- Major updates to the control file format; new header lines expand the range
+  of supported digests.
+  - Support MD5 and SHA-224 strong checksums.
+  - Support SHA-256 file hash.
+  zsync remains compatible with 0.6.x control files. Control files generated
+  with zsyncmake 0.8.x are compatible with 0.6.x clients if the strong
+  checksums method is left at the default. If MD5 or SHA-224 are used, then the
+  control file is only compatible with zsync-0.6.6 or above or zsync-0.8.0 or
+  above.
+- zsyncmake no longer shortens block checksums. Shortening checksums was used
+  to reduce the file size of the control file, but the saving kilobytes of data
+  transfer is no longer of value to most users. Shortened checksums could
+  expose the client to collision attacks (particularly for MD4).
+- Further improvements in the test suite, including adding backwards
+  compatibility integration tests (if zsync-0.6 is made available).
+
 Changes in v0.7.2
 - Fix a crash in zsyncmake when reading from stdin.
 - zsync download progress indication is continual now.

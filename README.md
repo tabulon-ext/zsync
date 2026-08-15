@@ -1,4 +1,4 @@
-# zsync 0.7.2
+# zsync 0.8.0
 
 zsync is a file transfer program. It allows you to download a file from a
 web server, where you have an older version of the file on your computer
@@ -93,7 +93,8 @@ out to me personally at cph@moria.org.uk.
 zsync is based on the rsync algorithm, by Andrew Tridgell. It also incorporates
 a number of optimisations, based on ideas in academic papers by Utku Irmak,
 Svilen Mihaylov and Torsten Suel (primarily "Improved Single-Round Protocols
-for Remote File Synchronization", Sept 2004).
+for Remote File Synchronization", Sept 2004). The zsync file format
+incorporates ideas from zsync2 by [tannevaled](https://github.com/tannevaled).
 
 zsync is copyright 2004,2005,2007,2009,2025,2026 Colin Phipps <cph@moria.org.uk>.
 zsync is made available under the Artistic License 2.0 - see the file LICENSE

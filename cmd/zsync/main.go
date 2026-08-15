@@ -31,7 +31,7 @@ import (
 	"github.com/cph6/zsync/internal/httpbasic"
 )
 
-const version = "0.7.2"
+const version = "0.8.0"
 
 // stringSlice for repeatable flag values.
 type stringSlice []string
